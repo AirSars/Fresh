@@ -1,0 +1,14 @@
+//
+//  Fresh.pch
+//  Fresh
+//
+//  Created by NADA_BM on 15/12/22.
+//  Copyright © 2015年 NADA_BM. All rights reserved.
+//
+
+#ifndef Fresh_pch
+#define Fresh_pch
+
+#import "Defines.h"
+
+#endif /* Fresh_pch */
