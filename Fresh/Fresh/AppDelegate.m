@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "FTabBar.h"
 #import "LaunchVC.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,12 @@
     vc.newfeatureType=NewfeatureTypeFromeWelcom;
     self.window.rootViewController=vc;
     [self.window makeKeyAndVisible];
+    
+    //启用IQKeyBoard
+    [[IQKeyboardManager sharedManager]setEnable:YES];
+    [[IQKeyboardManager sharedManager]setEnableAutoToolbar:NO];
+    [[IQKeyboardManager sharedManager]setShouldResignOnTouchOutside:YES];
+    
     return YES;
 }
 

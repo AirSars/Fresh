@@ -33,21 +33,21 @@
 
 -(void)addRootController
 {
-    FirstPageVC *vc1=[[FirstPageVC alloc]init];
+    FirstPageVC *vc1=[[FirstPageVC alloc]initWithNibName:@"FirstPageVC" bundle:nil];
     vc1.title=@"首页";
     UINavigationController *nav1=[[UINavigationController alloc]initWithRootViewController:vc1];
     nav1.tabBarItem.title=@"首页";
     nav1.tabBarItem.image=[UIImage imageWithContentFileName:@"1.png"];
     [self customNavigationBar:nav1];
     
-    CategoryVC *vc2=[[CategoryVC alloc]init];
+    CategoryVC *vc2=[[CategoryVC alloc]initWithNibName:@"CategoryVC" bundle:nil];
     vc2.title=@"分类";
     UINavigationController *nav2=[[UINavigationController alloc]initWithRootViewController:vc2];
     nav2.tabBarItem.title=@"分类";
     nav2.tabBarItem.image=[UIImage imageWithContentFileName:@"2.png"];
     [self customNavigationBar:nav2];
     
-    ShoppingCarVC *vc3=[[ShoppingCarVC alloc]init];
+    ShoppingCarVC *vc3=[[ShoppingCarVC alloc]initWithNibName:@"ShoppingCarVC" bundle:nil];
     vc3.title=@"购物车";
     UINavigationController *nav3=[[UINavigationController alloc]initWithRootViewController:vc3];
     nav3.tabBarItem.title=@"购物车";
@@ -55,14 +55,14 @@
     nav3.tabBarItem.image=[UIImage imageWithContentFileName:@"3.png"];
     [self customNavigationBar:nav3];
     
-    HelpVC *vc4=[[HelpVC alloc]init];
+    HelpVC *vc4=[[HelpVC alloc]initWithNibName:@"HelpVC" bundle:nil];
     vc4.title=@"帮助";
     UINavigationController *nav4=[[UINavigationController alloc]initWithRootViewController:vc4];
     nav4.tabBarItem.title=@"帮助";
     nav4.tabBarItem.image=[UIImage imageWithContentFileName:@"4.png"];
     [self customNavigationBar:nav4];
     
-    MemberVC *vc5=[[MemberVC alloc]init];
+    MemberVC *vc5=[[MemberVC alloc]initWithNibName:@"MemberVC" bundle:nil];
     vc5.title=@"我的";
     UINavigationController *nav5=[[UINavigationController alloc]initWithRootViewController:vc5];
     nav5.tabBarItem.title=@"我的";

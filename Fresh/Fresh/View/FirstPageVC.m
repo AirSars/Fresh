@@ -7,8 +7,12 @@
 //
 
 #import "FirstPageVC.h"
+#import "SDCycleScrollView.h"
+#import "UIImage+Addtions.h"
+#import "UIView+Addtions.h"
+#import "FGoodsDetailVC.h"
 
-@interface FirstPageVC ()
+@interface FirstPageVC ()<SDCycleScrollViewDelegate>
 
 @end
 
@@ -17,21 +21,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tabBarController.tabBar setHidden:NO];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self setupUI];
 }
-*/
+
+-(void)setupUI
+{
+    SDCycleScrollView *view=[SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, _adView.width, _adView.height) imagesGroup:@[[UIImage imageWithContentFileName:@"school_banner.jpg"],[UIImage imageWithContentFileName:@"school_banner.jpg"],[UIImage imageWithContentFileName:@"school_banner.jpg"],[UIImage imageWithContentFileName:@"school_banner.jpg"]]];
+    view.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+    view.delegate = self;
+    view.dotColor = [UIColor whiteColor]; // 自定义分页控件小圆标颜色
+//    view.placeholderImage = [UIImage imageNamed:@"placeholder"];
+    [_adView addSubview:view];
+}
+
+#pragma mark - SDCDelegate
+-(void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+{
+    FGoodsDetailVC *vc=[[FGoodsDetailVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end

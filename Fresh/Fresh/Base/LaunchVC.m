@@ -90,7 +90,7 @@
 - (void)setupPageControl
 {
     // 添加PageControl
-    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(KFrameWidth * 0.5, KFrameHeight - 20, pageControl.frame.size.width, pageControl.frame.size.height)];
+    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(self.view.frame.size.width * 0.5, self.view.frame.size.height - 20, 0, 0)];
     pageControl.numberOfPages = JMNewfeatureImageCount;
     [self.view addSubview:pageControl];
     
@@ -196,6 +196,7 @@
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
+    [UIApplication sharedApplication].statusBarHidden = NO;
     FTabBar *bar=[[FTabBar alloc]init];
     UIWindow *window=[UIApplication sharedApplication].keyWindow;
     window.rootViewController=bar;
