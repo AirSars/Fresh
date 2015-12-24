@@ -88,7 +88,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-cq-vWH" userLabel="FavoriteView">
                                                     <rect key="frame" x="220" y="10" width="80" height="70"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b2c_icon_detail_addfav_nor.png" translatesAutoresizingMaskIntoConstraints="NO" id="iXy-N6-fqd" customClass="b2c_">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b2c_icon_detail_addfav_nor.png" translatesAutoresizingMaskIntoConstraints="NO" id="iXy-N6-fqd">
                                                             <rect key="frame" x="25" y="8" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="JMG-Un-gBY"/>

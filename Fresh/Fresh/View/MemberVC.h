@@ -10,4 +10,8 @@
 
 @interface MemberVC : BasicVC
 
+@property (weak,nonatomic) IBOutlet UITableView *tableView;
+
+-(IBAction)buttonAction:(id)sender;
+
 @end

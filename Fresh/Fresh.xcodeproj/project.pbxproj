@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1AD7B271C2BD51100369F8B /* FUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B261C2BD51100369F8B /* FUILabel.m */; };
+		F1AD7B2A1C2BD52200369F8B /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B291C2BD52200369F8B /* FUIButton.m */; };
+		F1AD7B2D1C2BD62900369F8B /* new_user_center_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD7B2C1C2BD62900369F8B /* new_user_center_background.png */; };
+		F1AD7B2F1C2BD97E00369F8B /* new_user_address_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD7B2E1C2BD97E00369F8B /* new_user_address_logo.png */; };
+		F1AD7B331C2BDBF800369F8B /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B311C2BDBF800369F8B /* LoginVC.m */; };
+		F1AD7B341C2BDBF800369F8B /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AD7B321C2BDBF800369F8B /* LoginVC.xib */; };
+		F1AD7B381C2BDFAC00369F8B /* login.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F1AD7B371C2BDFAC00369F8B /* login.jpeg */; };
+		F1AD7B401C2BDFDA00369F8B /* RotationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B3B1C2BDFDA00369F8B /* RotationButton.m */; };
+		F1AD7B411C2BDFDA00369F8B /* RotationCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B3D1C2BDFDA00369F8B /* RotationCircle.m */; };
+		F1AD7B421C2BDFDA00369F8B /* ViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B3F1C2BDFDA00369F8B /* ViewFrameAccessor.m */; };
 		F1ED3A3D1C28E2FC00E3D2F8 /* BasicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED3A3C1C28E2FC00E3D2F8 /* BasicVC.m */; };
 		F1ED3A411C28E60000E3D2F8 /* FirstPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED3A3F1C28E60000E3D2F8 /* FirstPageVC.m */; };
 		F1ED3A421C28E60000E3D2F8 /* FirstPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1ED3A401C28E60000E3D2F8 /* FirstPageVC.xib */; };
@@ -99,6 +109,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1AD7B251C2BD51100369F8B /* FUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUILabel.h; sourceTree = "<group>"; };
+		F1AD7B261C2BD51100369F8B /* FUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUILabel.m; sourceTree = "<group>"; };
+		F1AD7B281C2BD52200369F8B /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
+		F1AD7B291C2BD52200369F8B /* FUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIButton.m; sourceTree = "<group>"; };
+		F1AD7B2C1C2BD62900369F8B /* new_user_center_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_user_center_background.png; sourceTree = "<group>"; };
+		F1AD7B2E1C2BD97E00369F8B /* new_user_address_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_user_address_logo.png; sourceTree = "<group>"; };
+		F1AD7B301C2BDBF800369F8B /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		F1AD7B311C2BDBF800369F8B /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		F1AD7B321C2BDBF800369F8B /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		F1AD7B371C2BDFAC00369F8B /* login.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpeg; sourceTree = "<group>"; };
+		F1AD7B3A1C2BDFDA00369F8B /* RotationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationButton.h; sourceTree = "<group>"; };
+		F1AD7B3B1C2BDFDA00369F8B /* RotationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationButton.m; sourceTree = "<group>"; };
+		F1AD7B3C1C2BDFDA00369F8B /* RotationCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationCircle.h; sourceTree = "<group>"; };
+		F1AD7B3D1C2BDFDA00369F8B /* RotationCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationCircle.m; sourceTree = "<group>"; };
+		F1AD7B3E1C2BDFDA00369F8B /* ViewFrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFrameAccessor.h; sourceTree = "<group>"; };
+		F1AD7B3F1C2BDFDA00369F8B /* ViewFrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFrameAccessor.m; sourceTree = "<group>"; };
 		F1ED3A361C28E17500E3D2F8 /* Fresh.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fresh.pch; sourceTree = "<group>"; };
 		F1ED3A3B1C28E2FC00E3D2F8 /* BasicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicVC.h; sourceTree = "<group>"; };
 		F1ED3A3C1C28E2FC00E3D2F8 /* BasicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicVC.m; sourceTree = "<group>"; };
@@ -255,6 +281,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1AD7B2B1C2BD62200369F8B /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				F1AD7B371C2BDFAC00369F8B /* login.jpeg */,
+				F1AD7B2E1C2BD97E00369F8B /* new_user_address_logo.png */,
+				F1AD7B2C1C2BD62900369F8B /* new_user_center_background.png */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		F1AD7B391C2BDFDA00369F8B /* button动画 */ = {
+			isa = PBXGroup;
+			children = (
+				F1AD7B3A1C2BDFDA00369F8B /* RotationButton.h */,
+				F1AD7B3B1C2BDFDA00369F8B /* RotationButton.m */,
+				F1AD7B3C1C2BDFDA00369F8B /* RotationCircle.h */,
+				F1AD7B3D1C2BDFDA00369F8B /* RotationCircle.m */,
+				F1AD7B3E1C2BDFDA00369F8B /* ViewFrameAccessor.h */,
+				F1AD7B3F1C2BDFDA00369F8B /* ViewFrameAccessor.m */,
+			);
+			path = "button动画";
+			sourceTree = "<group>";
+		};
 		F1ED3A371C28E2A100E3D2F8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +316,10 @@
 				F1ED3A7A1C28F06600E3D2F8 /* Defines.h */,
 				F1ED3B961C290AFC00E3D2F8 /* LaunchVC.h */,
 				F1ED3B971C290AFC00E3D2F8 /* LaunchVC.m */,
+				F1AD7B251C2BD51100369F8B /* FUILabel.h */,
+				F1AD7B261C2BD51100369F8B /* FUILabel.m */,
+				F1AD7B281C2BD52200369F8B /* FUIButton.h */,
+				F1AD7B291C2BD52200369F8B /* FUIButton.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -281,6 +334,7 @@
 		F1ED3A391C28E2BE00E3D2F8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F1AD7B391C2BDFDA00369F8B /* button动画 */,
 				F1ED3BC81C29203200E3D2F8 /* Category */,
 				F1ED3B891C28F93700E3D2F8 /* SVProgressHUD */,
 				F1ED3B6F1C28F8F300E3D2F8 /* SDCycleScrollView */,
@@ -352,6 +406,9 @@
 		F1ED3A5B1C28E69D00E3D2F8 /* MemberVC */ = {
 			isa = PBXGroup;
 			children = (
+				F1AD7B301C2BDBF800369F8B /* LoginVC.h */,
+				F1AD7B311C2BDBF800369F8B /* LoginVC.m */,
+				F1AD7B321C2BDBF800369F8B /* LoginVC.xib */,
 			);
 			path = MemberVC;
 			sourceTree = "<group>";
@@ -359,6 +416,7 @@
 		F1ED3A621C28EB3E00E3D2F8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F1AD7B2B1C2BD62200369F8B /* Member */,
 				F1ED3BCE1C29470B00E3D2F8 /* goods */,
 				F1ED3BC31C291E3B00E3D2F8 /* school_banner.jpg */,
 				F1ED3B9B1C290C6500E3D2F8 /* launch.jpg */,
@@ -726,6 +784,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1AD7B341C2BDBF800369F8B /* LoginVC.xib in Resources */,
 				F1ED3A761C28EB5A00E3D2F8 /* 5@2x.png in Resources */,
 				F1ED3BD11C29471C00E3D2F8 /* b2c_icon_detail_addfav_hl.png in Resources */,
 				F1ED3A6F1C28EB5A00E3D2F8 /* 2.png in Resources */,
@@ -746,10 +805,13 @@
 				F1ED3B0B1C28F84600E3D2F8 /* IQKeyboardManager.bundle in Resources */,
 				F1ED3A711C28EB5A00E3D2F8 /* 3.png in Resources */,
 				F1EFE92E1C284FAE00B02B52 /* Images.xcassets in Resources */,
+				F1AD7B2F1C2BD97E00369F8B /* new_user_address_logo.png in Resources */,
+				F1AD7B381C2BDFAC00369F8B /* login.jpeg in Resources */,
 				F1ED3BD21C29471C00E3D2F8 /* b2c_icon_detail_addfav_nor.png in Resources */,
 				F1ED3B931C28F93700E3D2F8 /* SVProgressHUD.bundle in Resources */,
 				F1ED3A421C28E60000E3D2F8 /* FirstPageVC.xib in Resources */,
 				F1ED3A561C28E65400E3D2F8 /* MemberVC.xib in Resources */,
+				F1AD7B2D1C2BD62900369F8B /* new_user_center_background.png in Resources */,
 				F1ED3A721C28EB5A00E3D2F8 /* 3@2x.png in Resources */,
 				F1ED3BD61C29475C00E3D2F8 /* b2c_big_car_none.png in Resources */,
 				F1EFE92C1C284FAE00B02B52 /* Main.storyboard in Resources */,
@@ -791,6 +853,7 @@
 				F1ED3B021C28F84600E3D2F8 /* IQUIWindow+Hierarchy.m in Sources */,
 				F1ED3B851C28F8F300E3D2F8 /* TAPageControl.m in Sources */,
 				F1ED3A461C28E61500E3D2F8 /* CategoryVC.m in Sources */,
+				F1AD7B2A1C2BD52200369F8B /* FUIButton.m in Sources */,
 				F1ED3A501C28E64800E3D2F8 /* HelpVC.m in Sources */,
 				F1ED3B041C28F84600E3D2F8 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				F1ED3B001C28F84600E3D2F8 /* IQUIView+Hierarchy.m in Sources */,
@@ -805,11 +868,14 @@
 				F1ED3B071C28F84600E3D2F8 /* IQBarButtonItem.m in Sources */,
 				F1ED3A551C28E65400E3D2F8 /* MemberVC.m in Sources */,
 				F1ED3ACF1C28F80A00E3D2F8 /* NSBKeyframeAnimationFunctions.c in Sources */,
+				F1AD7B411C2BDFDA00369F8B /* RotationCircle.m in Sources */,
+				F1AD7B421C2BDFDA00369F8B /* ViewFrameAccessor.m in Sources */,
 				F1ED3A411C28E60000E3D2F8 /* FirstPageVC.m in Sources */,
 				F1ED3AD01C28F80A00E3D2F8 /* UIView+JHChainableAnimations.m in Sources */,
 				F1ED3B991C290AFC00E3D2F8 /* LaunchVC.m in Sources */,
 				F1ED3A611C28E8CB00E3D2F8 /* FTabBar.m in Sources */,
 				F1ED3BCC1C293C3400E3D2F8 /* FGoodsDetailVC.m in Sources */,
+				F1AD7B271C2BD51100369F8B /* FUILabel.m in Sources */,
 				F1ED3B821C28F8F300E3D2F8 /* TAAbstractDotView.m in Sources */,
 				F1ED3A4B1C28E63800E3D2F8 /* ShoppingCarVC.m in Sources */,
 				F1ED3B0A1C28F84600E3D2F8 /* IQUIView+IQKeyboardToolbar.m in Sources */,
@@ -817,8 +883,10 @@
 				F1ED3AFE1C28F84600E3D2F8 /* IQNSArray+Sort.m in Sources */,
 				F1ED3B941C28F93700E3D2F8 /* SVProgressHUD.m in Sources */,
 				F1ED3BC71C29201D00E3D2F8 /* UIView+Addtions.m in Sources */,
+				F1AD7B401C2BDFDA00369F8B /* RotationButton.m in Sources */,
 				F1ED3ACE1C28F80A00E3D2F8 /* JHKeyframeAnimation.m in Sources */,
 				F1ED3AD71C28F82A00E3D2F8 /* BMLineCumstomDefault.m in Sources */,
+				F1AD7B331C2BDBF800369F8B /* LoginVC.m in Sources */,
 				F1ED3B061C28F84600E3D2F8 /* IQTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

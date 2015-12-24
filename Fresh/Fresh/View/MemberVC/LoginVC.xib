@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC">
+            <connections>
+                <outlet property="loginBtn" destination="4mu-wE-ffR" id="bbw-nV-hFe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="8xM-Uw-VWh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mu-wE-ffR" customClass="RotationButton">
+                    <rect key="frame" x="85" y="408" width="150" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.3294117647" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Lva-V6-EZb"/>
+                        <constraint firstAttribute="width" constant="150" id="zTz-rZ-eUJ"/>
+                    </constraints>
+                    <state key="normal" title="登陆"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8xM-Uw-VWh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0RE-ud-gbC"/>
+                <constraint firstItem="8xM-Uw-VWh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="88q-YG-YZR"/>
+                <constraint firstAttribute="trailing" secondItem="8xM-Uw-VWh" secondAttribute="trailing" id="Pad-Bt-7hz"/>
+                <constraint firstItem="4mu-wE-ffR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tir-L3-Hhs"/>
+                <constraint firstAttribute="bottom" secondItem="4mu-wE-ffR" secondAttribute="bottom" constant="130" id="rtz-44-bCn"/>
+                <constraint firstAttribute="bottom" secondItem="8xM-Uw-VWh" secondAttribute="bottom" id="sDy-Bu-i9B"/>
+            </constraints>
+            <point key="canvasLocation" x="337" y="289"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login.jpeg" width="124" height="220"/>
+    </resources>
+</document>
