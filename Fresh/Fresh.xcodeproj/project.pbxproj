@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F18B377C1C2D246300EBFF4B /* MyPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F18B377A1C2D246300EBFF4B /* MyPageVC.m */; };
+		F18B377D1C2D246300EBFF4B /* MyPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18B377B1C2D246300EBFF4B /* MyPageVC.xib */; };
 		F1AD7B271C2BD51100369F8B /* FUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B261C2BD51100369F8B /* FUILabel.m */; };
 		F1AD7B2A1C2BD52200369F8B /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B291C2BD52200369F8B /* FUIButton.m */; };
 		F1AD7B2D1C2BD62900369F8B /* new_user_center_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD7B2C1C2BD62900369F8B /* new_user_center_background.png */; };
@@ -26,8 +28,6 @@
 		F1ED3A4C1C28E63800E3D2F8 /* ShoppingCarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1ED3A4A1C28E63800E3D2F8 /* ShoppingCarVC.xib */; };
 		F1ED3A501C28E64800E3D2F8 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED3A4E1C28E64800E3D2F8 /* HelpVC.m */; };
 		F1ED3A511C28E64800E3D2F8 /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1ED3A4F1C28E64800E3D2F8 /* HelpVC.xib */; };
-		F1ED3A551C28E65400E3D2F8 /* MemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED3A531C28E65400E3D2F8 /* MemberVC.m */; };
-		F1ED3A561C28E65400E3D2F8 /* MemberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1ED3A541C28E65400E3D2F8 /* MemberVC.xib */; };
 		F1ED3A611C28E8CB00E3D2F8 /* FTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED3A601C28E8CB00E3D2F8 /* FTabBar.m */; };
 		F1ED3A6D1C28EB5A00E3D2F8 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F1ED3A631C28EB5A00E3D2F8 /* 1.png */; };
 		F1ED3A6E1C28EB5A00E3D2F8 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1ED3A641C28EB5A00E3D2F8 /* 1@2x.png */; };
@@ -109,6 +109,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F18B37791C2D246300EBFF4B /* MyPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPageVC.h; sourceTree = "<group>"; };
+		F18B377A1C2D246300EBFF4B /* MyPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPageVC.m; sourceTree = "<group>"; };
+		F18B377B1C2D246300EBFF4B /* MyPageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPageVC.xib; sourceTree = "<group>"; };
 		F1AD7B251C2BD51100369F8B /* FUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUILabel.h; sourceTree = "<group>"; };
 		F1AD7B261C2BD51100369F8B /* FUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUILabel.m; sourceTree = "<group>"; };
 		F1AD7B281C2BD52200369F8B /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
@@ -140,9 +143,6 @@
 		F1ED3A4D1C28E64800E3D2F8 /* HelpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpVC.h; path = ../HelpVC.h; sourceTree = "<group>"; };
 		F1ED3A4E1C28E64800E3D2F8 /* HelpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpVC.m; path = ../HelpVC.m; sourceTree = "<group>"; };
 		F1ED3A4F1C28E64800E3D2F8 /* HelpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HelpVC.xib; path = ../HelpVC.xib; sourceTree = "<group>"; };
-		F1ED3A521C28E65400E3D2F8 /* MemberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemberVC.h; path = ../MemberVC.h; sourceTree = "<group>"; };
-		F1ED3A531C28E65400E3D2F8 /* MemberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemberVC.m; path = ../MemberVC.m; sourceTree = "<group>"; };
-		F1ED3A541C28E65400E3D2F8 /* MemberVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MemberVC.xib; path = ../MemberVC.xib; sourceTree = "<group>"; };
 		F1ED3A5F1C28E8CB00E3D2F8 /* FTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTabBar.h; sourceTree = "<group>"; };
 		F1ED3A601C28E8CB00E3D2F8 /* FTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTabBar.m; sourceTree = "<group>"; };
 		F1ED3A631C28EB5A00E3D2F8 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -372,9 +372,9 @@
 				F1ED3A4D1C28E64800E3D2F8 /* HelpVC.h */,
 				F1ED3A4E1C28E64800E3D2F8 /* HelpVC.m */,
 				F1ED3A4F1C28E64800E3D2F8 /* HelpVC.xib */,
-				F1ED3A521C28E65400E3D2F8 /* MemberVC.h */,
-				F1ED3A531C28E65400E3D2F8 /* MemberVC.m */,
-				F1ED3A541C28E65400E3D2F8 /* MemberVC.xib */,
+				F18B37791C2D246300EBFF4B /* MyPageVC.h */,
+				F18B377A1C2D246300EBFF4B /* MyPageVC.m */,
+				F18B377B1C2D246300EBFF4B /* MyPageVC.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -809,8 +809,8 @@
 				F1AD7B381C2BDFAC00369F8B /* login.jpeg in Resources */,
 				F1ED3BD21C29471C00E3D2F8 /* b2c_icon_detail_addfav_nor.png in Resources */,
 				F1ED3B931C28F93700E3D2F8 /* SVProgressHUD.bundle in Resources */,
+				F18B377D1C2D246300EBFF4B /* MyPageVC.xib in Resources */,
 				F1ED3A421C28E60000E3D2F8 /* FirstPageVC.xib in Resources */,
-				F1ED3A561C28E65400E3D2F8 /* MemberVC.xib in Resources */,
 				F1AD7B2D1C2BD62900369F8B /* new_user_center_background.png in Resources */,
 				F1ED3A721C28EB5A00E3D2F8 /* 3@2x.png in Resources */,
 				F1ED3BD61C29475C00E3D2F8 /* b2c_big_car_none.png in Resources */,
@@ -866,7 +866,6 @@
 				F1ED3B881C28F8F300E3D2F8 /* UIView+SDExtension.m in Sources */,
 				F1ED3AFF1C28F84600E3D2F8 /* IQUITextFieldView+Additions.m in Sources */,
 				F1ED3B071C28F84600E3D2F8 /* IQBarButtonItem.m in Sources */,
-				F1ED3A551C28E65400E3D2F8 /* MemberVC.m in Sources */,
 				F1ED3ACF1C28F80A00E3D2F8 /* NSBKeyframeAnimationFunctions.c in Sources */,
 				F1AD7B411C2BDFDA00369F8B /* RotationCircle.m in Sources */,
 				F1AD7B421C2BDFDA00369F8B /* ViewFrameAccessor.m in Sources */,
@@ -878,6 +877,7 @@
 				F1AD7B271C2BD51100369F8B /* FUILabel.m in Sources */,
 				F1ED3B821C28F8F300E3D2F8 /* TAAbstractDotView.m in Sources */,
 				F1ED3A4B1C28E63800E3D2F8 /* ShoppingCarVC.m in Sources */,
+				F18B377C1C2D246300EBFF4B /* MyPageVC.m in Sources */,
 				F1ED3B0A1C28F84600E3D2F8 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				F1ED3A791C28EB8200E3D2F8 /* UIImage+Addtions.m in Sources */,
 				F1ED3AFE1C28F84600E3D2F8 /* IQNSArray+Sort.m in Sources */,

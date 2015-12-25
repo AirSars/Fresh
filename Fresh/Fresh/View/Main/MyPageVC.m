@@ -1,20 +1,20 @@
 //
-//  MemberVC.m
+//  MyPageVC.m
 //  Fresh
 //
-//  Created by NADA_BM on 15/12/22.
+//  Created by NADA_BM on 15/12/25.
 //  Copyright © 2015年 NADA_BM. All rights reserved.
 //
 
-#import "MemberVC.h"
+#import "MyPageVC.h"
 #import "UIImage+Addtions.h"
 #import "LoginVC.h"
 
-@interface MemberVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface MyPageVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
-@implementation MemberVC
+@implementation MyPageVC
 {
     NSArray *titleAry;
 }

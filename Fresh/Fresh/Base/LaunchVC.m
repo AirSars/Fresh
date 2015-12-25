@@ -198,6 +198,7 @@
 {
     [UIApplication sharedApplication].statusBarHidden = NO;
     FTabBar *bar=[[FTabBar alloc]init];
+    bar.selectedIndex=0;
     UIWindow *window=[UIApplication sharedApplication].keyWindow;
     window.rootViewController=bar;
 }

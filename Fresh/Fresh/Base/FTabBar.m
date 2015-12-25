@@ -11,9 +11,9 @@
 #import "CategoryVC.h"
 #import "ShoppingCarVC.h"
 #import "HelpVC.h"
-#import "MemberVC.h"
 #import "UIImage+Addtions.h"
 #import "UIView+BMLine.h"
+#import "MyPageVC.h"
 
 @interface FTabBar ()
 
@@ -62,7 +62,7 @@
     nav4.tabBarItem.image=[UIImage imageWithContentFileName:@"4.png"];
     [self customNavigationBar:nav4];
     
-    MemberVC *vc5=[[MemberVC alloc]initWithNibName:@"MemberVC" bundle:nil];
+    MyPageVC *vc5=[[MyPageVC alloc]initWithNibName:@"MyPageVC" bundle:nil];
     vc5.title=@"我的";
     UINavigationController *nav5=[[UINavigationController alloc]initWithRootViewController:vc5];
     nav5.tabBarItem.title=@"我的";
