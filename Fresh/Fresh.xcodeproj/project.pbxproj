@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F128C0881C324E8100DFA30C /* DazFlake.png in Resources */ = {isa = PBXBuildFile; fileRef = F128C0851C324E8100DFA30C /* DazFlake.png */; };
+		F128C0891C324E8100DFA30C /* UIView+BMSnow.m in Sources */ = {isa = PBXBuildFile; fileRef = F128C0871C324E8100DFA30C /* UIView+BMSnow.m */; };
 		F18B377C1C2D246300EBFF4B /* MyPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F18B377A1C2D246300EBFF4B /* MyPageVC.m */; };
 		F18B377D1C2D246300EBFF4B /* MyPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18B377B1C2D246300EBFF4B /* MyPageVC.xib */; };
 		F1AD7B271C2BD51100369F8B /* FUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B261C2BD51100369F8B /* FUILabel.m */; };
@@ -16,9 +18,6 @@
 		F1AD7B331C2BDBF800369F8B /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B311C2BDBF800369F8B /* LoginVC.m */; };
 		F1AD7B341C2BDBF800369F8B /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AD7B321C2BDBF800369F8B /* LoginVC.xib */; };
 		F1AD7B381C2BDFAC00369F8B /* login.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F1AD7B371C2BDFAC00369F8B /* login.jpeg */; };
-		F1AD7B401C2BDFDA00369F8B /* RotationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B3B1C2BDFDA00369F8B /* RotationButton.m */; };
-		F1AD7B411C2BDFDA00369F8B /* RotationCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B3D1C2BDFDA00369F8B /* RotationCircle.m */; };
-		F1AD7B421C2BDFDA00369F8B /* ViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7B3F1C2BDFDA00369F8B /* ViewFrameAccessor.m */; };
 		F1ED3A3D1C28E2FC00E3D2F8 /* BasicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED3A3C1C28E2FC00E3D2F8 /* BasicVC.m */; };
 		F1ED3A411C28E60000E3D2F8 /* FirstPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ED3A3F1C28E60000E3D2F8 /* FirstPageVC.m */; };
 		F1ED3A421C28E60000E3D2F8 /* FirstPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1ED3A401C28E60000E3D2F8 /* FirstPageVC.xib */; };
@@ -109,6 +108,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F128C0851C324E8100DFA30C /* DazFlake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlake.png; sourceTree = "<group>"; };
+		F128C0861C324E8100DFA30C /* UIView+BMSnow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMSnow.h"; sourceTree = "<group>"; };
+		F128C0871C324E8100DFA30C /* UIView+BMSnow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMSnow.m"; sourceTree = "<group>"; };
 		F18B37791C2D246300EBFF4B /* MyPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPageVC.h; sourceTree = "<group>"; };
 		F18B377A1C2D246300EBFF4B /* MyPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPageVC.m; sourceTree = "<group>"; };
 		F18B377B1C2D246300EBFF4B /* MyPageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPageVC.xib; sourceTree = "<group>"; };
@@ -122,12 +124,6 @@
 		F1AD7B311C2BDBF800369F8B /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		F1AD7B321C2BDBF800369F8B /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		F1AD7B371C2BDFAC00369F8B /* login.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpeg; sourceTree = "<group>"; };
-		F1AD7B3A1C2BDFDA00369F8B /* RotationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationButton.h; sourceTree = "<group>"; };
-		F1AD7B3B1C2BDFDA00369F8B /* RotationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationButton.m; sourceTree = "<group>"; };
-		F1AD7B3C1C2BDFDA00369F8B /* RotationCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationCircle.h; sourceTree = "<group>"; };
-		F1AD7B3D1C2BDFDA00369F8B /* RotationCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationCircle.m; sourceTree = "<group>"; };
-		F1AD7B3E1C2BDFDA00369F8B /* ViewFrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFrameAccessor.h; sourceTree = "<group>"; };
-		F1AD7B3F1C2BDFDA00369F8B /* ViewFrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFrameAccessor.m; sourceTree = "<group>"; };
 		F1ED3A361C28E17500E3D2F8 /* Fresh.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fresh.pch; sourceTree = "<group>"; };
 		F1ED3A3B1C28E2FC00E3D2F8 /* BasicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicVC.h; sourceTree = "<group>"; };
 		F1ED3A3C1C28E2FC00E3D2F8 /* BasicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicVC.m; sourceTree = "<group>"; };
@@ -281,6 +277,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F128C0841C324E8100DFA30C /* BMSnow */ = {
+			isa = PBXGroup;
+			children = (
+				F128C0851C324E8100DFA30C /* DazFlake.png */,
+				F128C0861C324E8100DFA30C /* UIView+BMSnow.h */,
+				F128C0871C324E8100DFA30C /* UIView+BMSnow.m */,
+			);
+			path = BMSnow;
+			sourceTree = "<group>";
+		};
 		F1AD7B2B1C2BD62200369F8B /* Member */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,19 +295,6 @@
 				F1AD7B2C1C2BD62900369F8B /* new_user_center_background.png */,
 			);
 			path = Member;
-			sourceTree = "<group>";
-		};
-		F1AD7B391C2BDFDA00369F8B /* button动画 */ = {
-			isa = PBXGroup;
-			children = (
-				F1AD7B3A1C2BDFDA00369F8B /* RotationButton.h */,
-				F1AD7B3B1C2BDFDA00369F8B /* RotationButton.m */,
-				F1AD7B3C1C2BDFDA00369F8B /* RotationCircle.h */,
-				F1AD7B3D1C2BDFDA00369F8B /* RotationCircle.m */,
-				F1AD7B3E1C2BDFDA00369F8B /* ViewFrameAccessor.h */,
-				F1AD7B3F1C2BDFDA00369F8B /* ViewFrameAccessor.m */,
-			);
-			path = "button动画";
 			sourceTree = "<group>";
 		};
 		F1ED3A371C28E2A100E3D2F8 /* Base */ = {
@@ -334,7 +327,7 @@
 		F1ED3A391C28E2BE00E3D2F8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F1AD7B391C2BDFDA00369F8B /* button动画 */,
+				F128C0841C324E8100DFA30C /* BMSnow */,
 				F1ED3BC81C29203200E3D2F8 /* Category */,
 				F1ED3B891C28F93700E3D2F8 /* SVProgressHUD */,
 				F1ED3B6F1C28F8F300E3D2F8 /* SDCycleScrollView */,
@@ -785,6 +778,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AD7B341C2BDBF800369F8B /* LoginVC.xib in Resources */,
+				F128C0881C324E8100DFA30C /* DazFlake.png in Resources */,
 				F1ED3A761C28EB5A00E3D2F8 /* 5@2x.png in Resources */,
 				F1ED3BD11C29471C00E3D2F8 /* b2c_icon_detail_addfav_hl.png in Resources */,
 				F1ED3A6F1C28EB5A00E3D2F8 /* 2.png in Resources */,
@@ -861,14 +855,13 @@
 				F1ED3B031C28F84600E3D2F8 /* IQKeyboardManager.m in Sources */,
 				F1ED3B951C28F93700E3D2F8 /* SVRadialGradientLayer.m in Sources */,
 				F1ED3B811C28F8F300E3D2F8 /* NSData+SDDataCache.m in Sources */,
+				F128C0891C324E8100DFA30C /* UIView+BMSnow.m in Sources */,
 				F1ED3B051C28F84600E3D2F8 /* IQSegmentedNextPrevious.m in Sources */,
 				F1ED3B921C28F93700E3D2F8 /* SVIndefiniteAnimatedView.m in Sources */,
 				F1ED3B881C28F8F300E3D2F8 /* UIView+SDExtension.m in Sources */,
 				F1ED3AFF1C28F84600E3D2F8 /* IQUITextFieldView+Additions.m in Sources */,
 				F1ED3B071C28F84600E3D2F8 /* IQBarButtonItem.m in Sources */,
 				F1ED3ACF1C28F80A00E3D2F8 /* NSBKeyframeAnimationFunctions.c in Sources */,
-				F1AD7B411C2BDFDA00369F8B /* RotationCircle.m in Sources */,
-				F1AD7B421C2BDFDA00369F8B /* ViewFrameAccessor.m in Sources */,
 				F1ED3A411C28E60000E3D2F8 /* FirstPageVC.m in Sources */,
 				F1ED3AD01C28F80A00E3D2F8 /* UIView+JHChainableAnimations.m in Sources */,
 				F1ED3B991C290AFC00E3D2F8 /* LaunchVC.m in Sources */,
@@ -883,7 +876,6 @@
 				F1ED3AFE1C28F84600E3D2F8 /* IQNSArray+Sort.m in Sources */,
 				F1ED3B941C28F93700E3D2F8 /* SVProgressHUD.m in Sources */,
 				F1ED3BC71C29201D00E3D2F8 /* UIView+Addtions.m in Sources */,
-				F1AD7B401C2BDFDA00369F8B /* RotationButton.m in Sources */,
 				F1ED3ACE1C28F80A00E3D2F8 /* JHKeyframeAnimation.m in Sources */,
 				F1ED3AD71C28F82A00E3D2F8 /* BMLineCumstomDefault.m in Sources */,
 				F1AD7B331C2BDBF800369F8B /* LoginVC.m in Sources */,

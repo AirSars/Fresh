@@ -7,10 +7,11 @@
 //
 
 #import "BasicVC.h"
-#import "RotationButton.h"
+
 
 @interface LoginVC : BasicVC
 
-@property (weak,nonatomic) IBOutlet RotationButton *loginBtn;
+
+-(IBAction)buttonAction:(id)sender;
 
 @end

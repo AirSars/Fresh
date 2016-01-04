@@ -7,8 +7,9 @@
 //
 
 #import "LoginVC.h"
+#import "UIView+BMSnow.h"
 
-@interface LoginVC ()<RotationCircleDelegate>
+@interface LoginVC ()
 
 @end
 
@@ -17,18 +18,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
     [self setupUI];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.view addBackGroundWithSnow];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.view removeBackgroundWithSnow];
 }
 
 -(void)setupUI
 {
-    _loginBtn.rotationDelegate = self;
+    
+
 }
 
-#pragma mark - btnDelegate
--(void)onClickRotationButton:(RotationButton *)rButton ImageView:(UIImage *)rotationImage
+#pragma mark - ButtonAction
+-(void)buttonAction:(id)sender
 {
-    [rButton showCircleRotation];
+    UIButton *btn=sender;
+    switch (btn.tag) {
+        case 0://退出
+        {
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
+
 
 @end
