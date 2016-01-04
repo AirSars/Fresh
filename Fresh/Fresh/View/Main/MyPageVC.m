@@ -35,7 +35,7 @@
 
 -(void)setupUI
 {
-    
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
 }
 
 #pragma mark - UITableViewDelegate
@@ -49,9 +49,14 @@
     return [titleAry[section] count];
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50.0;
+}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 20.0;
+    return 10.0;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -64,17 +69,23 @@
     static NSString* cellID=@"MemberCell";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellID];
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     cell.textLabel.font=[UIFont systemFontOfSize:14];
+    cell.textLabel.textAlignment=NSTextAlignmentLeft;
+    cell.textLabel.textColor=[UIColor blackColor];
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    CGRect frame=cell.imageView.frame;
+    frame.size=CGSizeMake(40, 40);
+    frame.origin.y=frame.origin.y+5;
+    cell.imageView.frame=frame;
     NSUInteger section=indexPath.section;
     NSUInteger row=indexPath.row;
     if (titleAry.count>section) {
         NSArray *tempAry=titleAry[section];
         if (tempAry.count>row) {
             cell.textLabel.text=tempAry[row];
-            cell.imageView.image=[UIImage imageWithContentFileName:@"new_user_address_logo.png"];
+            cell.imageView.image=[UIImage imageWithContentFileName:@"new_user_address_logo"];
         }
     }
     return cell;
@@ -88,7 +99,9 @@
         case 0://登陆
         {
             LoginVC *vc=[[LoginVC alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            [self presentViewController:vc animated:YES completion:^{
+                
+            }];
         }
             break;
             

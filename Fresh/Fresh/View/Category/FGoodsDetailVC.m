@@ -22,7 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title=@"商品详情";
-    [self.tabBarController.tabBar setHidden:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated

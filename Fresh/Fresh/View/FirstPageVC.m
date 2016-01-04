@@ -26,7 +26,6 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.tabBarController.tabBar setHidden:NO];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -49,6 +48,7 @@
 -(void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     FGoodsDetailVC *vc=[[FGoodsDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed=YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
