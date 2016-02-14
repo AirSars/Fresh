@@ -12,7 +12,7 @@
 //=================可自定义区域===============//
 
 //默认背景颜色
-#define bgColor [UIColor lightGrayColor]
+#define bgColor [UIColor colorWithRed:137/255.0 green:137/255.0 blue:137/255.0 alpha:0.5]
 
 //默认直线线宽
 static CGFloat const BMDefaultLineWidth=0.5;

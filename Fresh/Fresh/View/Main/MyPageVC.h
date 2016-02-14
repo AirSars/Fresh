@@ -10,7 +10,10 @@
 
 @interface MyPageVC : BasicVC
 
-@property (weak,nonatomic) IBOutlet UITableView *tableView;
+@property (weak,nonatomic) IBOutlet UICollectionView *collectionView;
+@property (assign,nonatomic) BOOL isLogin;
+@property (weak,nonatomic) IBOutlet UIView *loginView;
+@property (weak,nonatomic) IBOutlet UIView *hasLoginView;
 
 -(IBAction)buttonAction:(id)sender;
 

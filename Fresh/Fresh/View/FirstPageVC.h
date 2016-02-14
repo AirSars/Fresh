@@ -11,6 +11,8 @@
 @interface FirstPageVC : BasicVC
 
 @property (weak,nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak,nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak,nonatomic) IBOutlet UIView *adView;
+@property (weak,nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

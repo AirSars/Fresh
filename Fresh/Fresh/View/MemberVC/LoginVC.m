@@ -7,7 +7,6 @@
 //
 
 #import "LoginVC.h"
-#import "UIView+BMSnow.h"
 
 @interface LoginVC ()
 
@@ -22,21 +21,25 @@
     [self setupUI];
 }
 
--(void)viewDidAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
-    [self.view addBackGroundWithSnow];
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden=YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.view removeBackgroundWithSnow];
+    self.navigationController.navigationBarHidden=NO;
 }
 
 -(void)setupUI
 {
-    
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"Forgot Password?"];
+    NSRange strRange = {0,[str length]};
+    [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:strRange];
+    [str addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:strRange];
+    [_forgetPDBtn setAttributedTitle:str forState:UIControlStateNormal];
 
 }
 
@@ -47,12 +50,14 @@
     switch (btn.tag) {
         case 0://退出
         {
-            [self dismissViewControllerAnimated:YES completion:^{
-                
-            }];
+            [self.navigationController popViewControllerAnimated:YES];
         }
             break;
-            
+        case 1://普通登陆
+        {
+            _myPageVC.isLogin=1;
+            [self.navigationController popViewControllerAnimated:YES];
+        }
         default:
             break;
     }

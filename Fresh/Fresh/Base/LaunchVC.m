@@ -63,7 +63,7 @@
         UIImageView *imageView = [[UIImageView alloc] init];
 //        NSString *name = [NSString stringWithFormat:@"banner%d.jpg", i + 1];
 //        imageView.image = [UIImage imageNamed:name];
-        imageView.image=[UIImage imageWithContentFileName:@"launch.jpg"];
+        imageView.image=[UIImage imageWithContentFileName:@"sp"];
         [scrollView addSubview:imageView];
         
         // 设置frame

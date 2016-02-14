@@ -20,6 +20,6 @@
 //RGB取色值
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
-
+#define GREEN_COLOR [UIColor colorWithRed:103/255.0 green:187/255.0 blue:47/255.0 alpha:1]
 
 #endif /* Defines_h */

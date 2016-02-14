@@ -26,10 +26,13 @@
     self.window.rootViewController=vc;
     [self.window makeKeyAndVisible];
     
+    
     //启用IQKeyBoard
     [[IQKeyboardManager sharedManager]setEnable:YES];
     [[IQKeyboardManager sharedManager]setEnableAutoToolbar:NO];
     [[IQKeyboardManager sharedManager]setShouldResignOnTouchOutside:YES];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+
     
     return YES;
 }
