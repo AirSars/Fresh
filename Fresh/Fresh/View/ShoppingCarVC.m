@@ -8,6 +8,7 @@
 
 #import "ShoppingCarVC.h"
 #import "GoodsListCell.h"
+#import "UIView+BMLine.h"
 
 @interface ShoppingCarVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,6 +32,7 @@
     if ([_tableView respondsToSelector:@selector(setLayoutMargins:)]) {
         [_tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     }
+    [_tableView addLineWithType:0 color:nil position:BMLinePostionCustomBottom];
 }
 
 -(void)edit

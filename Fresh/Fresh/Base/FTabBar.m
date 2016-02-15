@@ -43,7 +43,7 @@
     [self customNavigationBar:nav1];
     
     CategoryVC *vc2=[[CategoryVC alloc]initWithNibName:@"CategoryVC" bundle:nil];
-    vc2.title=@"Category";
+    vc2.title=@"Fruits";
     UINavigationController *nav2=[[UINavigationController alloc]initWithRootViewController:vc2];
     nav2.tabBarItem.title=@"Category";
     nav2.tabBarItem.image=[UIImage imageWithContentFileName:@"category"];

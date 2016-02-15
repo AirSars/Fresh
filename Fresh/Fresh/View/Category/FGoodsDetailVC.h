@@ -16,7 +16,6 @@
 @property (weak,nonatomic) IBOutlet UILabel *labelGoodsNum;
 @property (weak,nonatomic) IBOutlet UILabel *labelCarrige;
 @property (weak,nonatomic) IBOutlet UIView *detailView;
-@property (weak,nonatomic) IBOutlet UIView *favouriteView;
 @property (weak,nonatomic) IBOutlet UIView *bottomView;
 @property (weak,nonatomic) IBOutlet UIButton *goBuyBtn;
 @property (weak,nonatomic) IBOutlet UIButton *addCarBtn;

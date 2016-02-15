@@ -7,8 +7,10 @@
 //
 
 #import "CategoryVC.h"
+#import "CategoryListCell.h"
+#import "FGoodsDetailVC.h"
 
-@interface CategoryVC ()
+@interface CategoryVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -17,21 +19,70 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setupUI
+{
+    UIImage *searchimage=[UIImage imageNamed:@"mag_glass"];
+    UIBarButtonItem *barbtn=[[UIBarButtonItem alloc] initWithImage:nil style:UIBarButtonItemStyleDone target:self action:@selector(searchprogram)];
+    barbtn.image=searchimage;
+    self.navigationItem.rightBarButtonItem=barbtn;
+    if ([_tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [_tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+    if ([_tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        [_tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)searchprogram
+{
+    
 }
-*/
+
+#pragma mark - TableViewDelegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 6;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 97;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CategoryListCell *cell=[tableView dequeueReusableCellWithIdentifier:@"categoryCell"];
+    if (!cell) {
+        cell=[[NSBundle mainBundle]loadNibNamed:@"CategoryListCell" owner:self options:nil][0];
+    }
+    [self configureCell:cell atIndex:indexPath];
+    return cell;
+}
+
+-(void)configureCell:(CategoryListCell *)cell atIndex:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FGoodsDetailVC *vc=[[FGoodsDetailVC alloc]init];
+    vc.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
