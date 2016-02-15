@@ -72,7 +72,9 @@
 {
     [super viewDidAppear:animated];
     [_detailView addLineWithType:0 color:nil position:BMLinePostionCustomBottom];
+    [_detailView addLineWithType:0 color:nil position:BMLinePostionCustomTop];
     [_bottomView addLineWithType:0 color:nil position:BMLinePostionCustomTop];
+    [_adView addLineWithType:0 color:nil position:BMLinePostionCustomBottom];
     [self setADImage];
 }
 
