@@ -7,8 +7,9 @@
 //
 
 #import "ShoppingCarVC.h"
+#import "GoodsListCell.h"
 
-@interface ShoppingCarVC ()
+@interface ShoppingCarVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -17,21 +18,62 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setupUI
+{
+    UIBarButtonItem *item=[[UIBarButtonItem alloc]initWithTitle:@"Edit" style:UIBarButtonItemStyleDone target:self action:@selector(edit)];
+    self.navigationItem.rightBarButtonItem=item;
+    if ([_tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [_tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+    if ([_tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        [_tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)edit
+{
+    
 }
-*/
+
+#pragma mark - TableViewDelegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 97;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GoodsListCell *cell=[tableView dequeueReusableCellWithIdentifier:@"goodsListCell"];
+    if (!cell) {
+        cell=[[NSBundle mainBundle]loadNibNamed:@"GoodsListCell" owner:self options:nil][0];
+    }
+    [self configureCell:cell atIndex:indexPath];
+    return cell;
+}
+
+-(void)configureCell:(GoodsListCell *)cell atIndex:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+}
+
 
 @end

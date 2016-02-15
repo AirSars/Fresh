@@ -26,6 +26,11 @@ static NSString *cellIdentifier=@"MenuCell";
     // Do any additional setup after loading the view from its nib.
     UINib *nib=[UINib nibWithNibName:@"MenuCollectionCell" bundle:nil];
     [_collectionView registerNib:nib forCellWithReuseIdentifier:cellIdentifier];
+    self.searchBar.translucent = YES;
+    self.searchBar.backgroundImage = [[UIImage alloc] init];
+    self.searchBar.barTintColor = [UIColor clearColor];
+    self.searchBar.backgroundColor = GREEN_COLOR;
+    self.searchBar.tintColor = [UIColor grayColor];
 }
 
 -(void)viewWillAppear:(BOOL)animated
