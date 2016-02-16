@@ -9,6 +9,7 @@
 #import "CategoryVC.h"
 #import "CategoryListCell.h"
 #import "FGoodsDetailVC.h"
+#import "FSearchVC.h"
 
 @interface CategoryVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -38,7 +39,9 @@
 
 -(void)searchprogram
 {
-    
+    FSearchVC *vc=[[FSearchVC alloc]init];
+    vc.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - TableViewDelegate

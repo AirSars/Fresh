@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSearchVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Picks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpF-MG-knh">
+                    <rect key="frame" x="30" y="80" width="100" height="25"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1YI-dF-eGn"/>
+                        <constraint firstAttribute="height" constant="25" id="BVt-3W-AwW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dro-x1-WUb">
+                    <rect key="frame" x="30" y="115" width="260" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5hA-k1-fxc"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyc-oP-MUb">
+                    <rect key="frame" x="30" y="131" width="80" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="7qj-sr-Pla"/>
+                        <constraint firstAttribute="height" constant="30" id="ybA-UI-0c6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Avoasda" backgroundImage="kuang.png">
+                        <color key="titleColor" red="0.4039215686" green="0.73333333329999995" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgO-2g-5rh">
+                    <rect key="frame" x="118" y="131" width="80" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="j5Q-cB-jNU"/>
+                        <constraint firstAttribute="width" constant="80" id="oyr-G8-lVo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Avoasda" backgroundImage="kuang.png">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6V-TG-Yy9">
+                    <rect key="frame" x="30" y="176" width="84" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="rb2-3z-Iqb"/>
+                        <constraint firstAttribute="width" constant="84" id="vnK-tx-NuS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Avoasda" backgroundImage="kuang.png">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upU-Ce-cbl">
+                    <rect key="frame" x="206" y="131" width="84" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="1Wc-VL-iFf"/>
+                        <constraint firstAttribute="height" constant="30" id="Ukw-Jp-QWS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Avoasda" backgroundImage="kuang.png">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Cyc-oP-MUb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="2U1-du-1S9"/>
+                <constraint firstItem="Cyc-oP-MUb" firstAttribute="top" secondItem="dro-x1-WUb" secondAttribute="bottom" constant="15" id="G35-69-nN1"/>
+                <constraint firstItem="AgO-2g-5rh" firstAttribute="leading" secondItem="Cyc-oP-MUb" secondAttribute="trailing" constant="8" id="JMc-xE-KmD"/>
+                <constraint firstItem="ZpF-MG-knh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="NIf-ZH-XNo"/>
+                <constraint firstItem="m6V-TG-Yy9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="NZI-St-2bK"/>
+                <constraint firstItem="upU-Ce-cbl" firstAttribute="leading" secondItem="AgO-2g-5rh" secondAttribute="trailing" constant="8" id="RQv-2p-X7x"/>
+                <constraint firstItem="AgO-2g-5rh" firstAttribute="top" secondItem="dro-x1-WUb" secondAttribute="bottom" constant="15" id="W9b-ja-DBq"/>
+                <constraint firstItem="dro-x1-WUb" firstAttribute="top" secondItem="ZpF-MG-knh" secondAttribute="bottom" constant="10" id="c2o-Ga-016"/>
+                <constraint firstAttribute="trailing" secondItem="dro-x1-WUb" secondAttribute="trailing" constant="30" id="cAE-Jv-Goa"/>
+                <constraint firstItem="ZpF-MG-knh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="cxh-xj-PMx"/>
+                <constraint firstItem="m6V-TG-Yy9" firstAttribute="top" secondItem="Cyc-oP-MUb" secondAttribute="bottom" constant="15" id="n1n-lC-PaS"/>
+                <constraint firstItem="dro-x1-WUb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="qfK-U8-UuW"/>
+                <constraint firstItem="upU-Ce-cbl" firstAttribute="top" secondItem="dro-x1-WUb" secondAttribute="bottom" constant="15" id="yxV-7N-jJe"/>
+            </constraints>
+            <point key="canvasLocation" x="257" y="256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kuang.png" width="90" height="31"/>
+    </resources>
+</document>

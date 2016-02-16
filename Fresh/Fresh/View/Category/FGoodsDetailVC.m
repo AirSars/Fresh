@@ -33,15 +33,15 @@
     barbtn.image=searchimage;
     self.navigationItem.rightBarButtonItem=barbtn;
     //左边按钮
-    UIView *view=[[UIView alloc]initWithFrame:CGRectMake(-30, 0, 100, 64)];
+    UIView *view=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 64)];
     UIButton *back = [UIButton buttonWithType:UIButtonTypeCustom];
     [back setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [back addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
-    back.frame=CGRectMake(0, 0, 50, 64);
+    back.frame=CGRectMake(-20, 0, 50, 64);
     UIButton *backToHome = [UIButton buttonWithType:UIButtonTypeCustom];
     [backToHome setImage:[UIImage imageNamed:@"detail-home"] forState:UIControlStateNormal];
     [backToHome addTarget:self action:@selector(backToHomeAction) forControlEvents:UIControlEventTouchUpInside];
-    backToHome.frame=CGRectMake(50, 0, 50, 64);
+    backToHome.frame=CGRectMake(20, 0, 50, 64);
     [view addSubview:back];
     [view addSubview:backToHome];
     UIBarButtonItem *releaseButtonItem = [[UIBarButtonItem alloc] initWithCustomView:view];

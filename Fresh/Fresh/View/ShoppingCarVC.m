@@ -9,6 +9,7 @@
 #import "ShoppingCarVC.h"
 #import "GoodsListCell.h"
 #import "UIView+BMLine.h"
+#import "CheckOutVC.h"
 
 @interface ShoppingCarVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -74,6 +75,23 @@
     
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+}
+
+-(void)btnAction:(id)sender
+{
+    UIButton *btn=sender;
+    switch (btn.tag) {
+        case 0:
+        {
+            CheckOutVC *vc=[[CheckOutVC alloc]init];
+            vc.hidesBottomBarWhenPushed=YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
     }
 }
 
